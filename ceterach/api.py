@@ -295,7 +295,7 @@ class MediaWiki:
 
         :returns: True
         """
-        return self.call(action="logout", use_defaults=False) == []
+        return self.call(action="logout", use_defaults=False) == {}
 
     def set_token(self, *args):
         """Sets the Wiki's ``tokens`` attribute with the tokens specified in
